@@ -12,23 +12,24 @@ export class SupplierComponent {
   suppliers: Supplier[] = [];
   formGroupSupplier: FormGroup;
   isEditing = false;
-
+  
   constructor(private supplierService: SupplierService, private formBuilder:FormBuilder) { 
     this.formGroupSupplier = this.formBuilder.group({
       id: '',
       name: '',
-      active: '',
+      active: false, //inicial value of checkbox
       category: '',
       contact: ''
     });
   }
-
+ 
   ngOnInit(): void {
-    this.loadSuppliers();
+    this.loadSuppliers(); //carrega os suppliers
   }
+  
 
-  loadSuppliers() {
-    this.supplierService.getSuppliers().subscribe(
+  loadSuppliers() {  
+    this.supplierService.getSuppliers().subscribe( //
       {
         next: data => this.suppliers = data,
       error: () => console.log('error')
@@ -36,6 +37,9 @@ export class SupplierComponent {
     );
   }
   save(){ //se devolve um observable é necessário um subscribe
+
+   
+
     if(this.isEditing){
 
       this.supplierService.update(this.formGroupSupplier.value).subscribe(

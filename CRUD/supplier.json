@@ -1,75 +1,32 @@
 {
-  "Supplier":[
+  "Supplier": [
     {
-      "id": "1",
-      "name": "Nestle",
+      "id": 1,
+      "name": "Supplier 1",
+      "category": "1",
       "active": "true",
-      "category": "Chocolate",
-      "contact": "34567890"
+      "contact": "000000"
     },
     {
-      "id": "2",
-      "name": "Cadbury",
+      "id": 2,
+      "name": "Supplier 2",
       "active": "true",
-      "category": "Chocolate",
-      "contact": "34567890"
+      "category": "2",
+      "contact": "0000001"
     },
     {
-      "id": "3",
-      "name": "Mars",
-      "active": "true",
-      "category": "Chocolate",
-      "contact": "34567890"
+      "id": 3,
+      "name": "Supplier ",
+      "active": false,
+      "category": "2",
+      "contact": "565656"
     },
     {
-      "id": "4",
-      "name": "Hershey",
-      "active": "true",
-      "category": "Chocolate",
-      "contact": "34567890"
-    },
-    {
-      "id": "5",
-      "name": "Ferrero",
-      "active": "true",
-      "category": "Chocolate",
-      "contact": "34567890"
-    },
-    {
-      "id": "6",
-      "name": "Lindt",
-      "active": "true",
-      "category": "Chocolate",
-      "contact": "34567890"
-    },
-    {
-      "id": "7",
-      "name": "Toblerone",
-      "active": "true",
-      "category": "Chocolate",
-      "contact": "34567890"
-    },
-    {
-      "id": "8",
-      "name": "Godiva",
-      "active": "true",
-      "category": "Chocolate",
-      "contact": "34567890"
-    },
-    {
-      "id": "9",
-      "name": "Guylian",
-      "active": "true",
-      "category": "Chocolate",
-      "contact": "34567890"
-    },
-    {
-      "id": "10",
-      "name": "Patchi",
-      "active": "true",
-      "category": "Chocolate",
-      "contact": "34567890"
+      "id": 4,
+      "name": "sfadfasdfa",
+      "active": true,
+      "category": "2",
+      "contact": "dfadsfa"
     }
-
   ]
 }

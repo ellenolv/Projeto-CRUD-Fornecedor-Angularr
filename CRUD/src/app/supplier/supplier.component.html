@@ -1,11 +1,9 @@
-<!--falta tratar o resultado do checkbox e select. 
 
-Tbm falta colocar o formControlName-->
 
 <div class="row">
     <div class="col-8 m-auto">
         <form [formGroup]="formGroupSupplier">
-            <div class="mb-3">
+            <div class="mb-3 form-group">
                 <label for="name" class="form-label">Nome: </label>
                 <input type="text" class="form-control" id="name" placeholder="nome" formControlName="name">
               </div>
@@ -14,7 +12,7 @@ Tbm falta colocar o formControlName-->
             <div class="row align-items-start">
 
                 <div class="col">
-                    <select class="form-select" aria-label="category">
+                    <select class="form-select" aria-label="category" name="category" id="category" formControlName="category" >
                         <option selected disabled>Categoria</option>
                         <option value="1">Regional</option>
                         <option value="2">Nacional</option>
@@ -25,7 +23,7 @@ Tbm falta colocar o formControlName-->
 
                 <div class="col">
                     <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="Active">
+                        <input class="form-check-input" type="checkbox" value="" id="Active" formControlName="active">
                         <label class="form-check-label" for="Active">
                           Ativo
                         </label>
@@ -35,10 +33,10 @@ Tbm falta colocar o formControlName-->
 
             <div class="mb-3">
                 <label for="" class="form-label">Contato: </label>
-                <input type="text" class="form-control" id="contact" placeholder=" 00 0000-0000">
+                <input type="text" class="form-control" id="contact" placeholder=" " formControlName="contact">
               </div>
             <div class="mb-3 d-flex justify-content-end">
-                <button type="button" class="btn btn-primary">Cadastrar</button>
+                <button type="button" class="btn btn-primary" (click)="save()">Cadastrar</button>
             </div>
         </form>
     </div>
@@ -63,8 +61,8 @@ Tbm falta colocar o formControlName-->
         <td>{{supplier.category}}</td>
         <td>{{supplier.contact}}</td>
         <td>
-            <button class="btn btn-primary me-1"> Excluir </button>
-            <button class="btn btn-danger"> Editar </button>
+            <button class="btn btn-primary me-1" (click)="remove(supplier)"> Excluir </button>
+            <button class="btn btn-danger" (click)="edit(supplier)"> Editar </button>
           </td>
       </tr>
     </tbody>
