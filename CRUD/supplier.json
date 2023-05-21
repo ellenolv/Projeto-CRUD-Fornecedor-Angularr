@@ -1,0 +1,75 @@
+{
+  "Supplier":[
+    {
+      "id": "1",
+      "name": "Nestle",
+      "active": "true",
+      "category": "Chocolate",
+      "contact": "34567890"
+    },
+    {
+      "id": "2",
+      "name": "Cadbury",
+      "active": "true",
+      "category": "Chocolate",
+      "contact": "34567890"
+    },
+    {
+      "id": "3",
+      "name": "Mars",
+      "active": "true",
+      "category": "Chocolate",
+      "contact": "34567890"
+    },
+    {
+      "id": "4",
+      "name": "Hershey",
+      "active": "true",
+      "category": "Chocolate",
+      "contact": "34567890"
+    },
+    {
+      "id": "5",
+      "name": "Ferrero",
+      "active": "true",
+      "category": "Chocolate",
+      "contact": "34567890"
+    },
+    {
+      "id": "6",
+      "name": "Lindt",
+      "active": "true",
+      "category": "Chocolate",
+      "contact": "34567890"
+    },
+    {
+      "id": "7",
+      "name": "Toblerone",
+      "active": "true",
+      "category": "Chocolate",
+      "contact": "34567890"
+    },
+    {
+      "id": "8",
+      "name": "Godiva",
+      "active": "true",
+      "category": "Chocolate",
+      "contact": "34567890"
+    },
+    {
+      "id": "9",
+      "name": "Guylian",
+      "active": "true",
+      "category": "Chocolate",
+      "contact": "34567890"
+    },
+    {
+      "id": "10",
+      "name": "Patchi",
+      "active": "true",
+      "category": "Chocolate",
+      "contact": "34567890"
+    }
+
+  ]
+}
